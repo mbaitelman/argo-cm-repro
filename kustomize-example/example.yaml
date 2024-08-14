@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::678656626817:role/${ENV_NAME}-tools-cluster-external-secrets
+  name: ${ENV_NAME}-external-secrets
+  namespace: default    
